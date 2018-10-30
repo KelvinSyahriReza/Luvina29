@@ -1,15 +1,17 @@
 var bintang = ''
 
-for (var i = 0; i < 5; i++){
+var rows1 = 5
+for (var i = 0; i < rows1; i++){
   console.log('*')
 }
 
 console.log('<<<<<<<<<<<<<<=================>>>>>>>>>>>>')
 
-var bintang = ''
-for (var i= 0; i < 5; i++){
+var rows2 = 5
+for (var i= 0; i < rows2; i++){
   var tampung = ''
-  for (var j =0; j < 5; j++) {
+  
+  for (var j =0; j < rows2; j++) {
     tampung += '*'
   }
   console.log(tampung)
@@ -17,9 +19,14 @@ for (var i= 0; i < 5; i++){
 
 console.log('<<<<<<<<<<<<<<=================>>>>>>>>>>>>')
 
-var tampung = ''
-for (var i= 0; i < 5; i++){
-    tampung += '*'
+var rows3= 5
  
+for (var i= 1; i <= rows3; i++){
+var tampung = ''
+  for (var j= 1; j <= i; j++){
+     
+    tampung += '*'
+    
+  }
   console.log(tampung)
 }
